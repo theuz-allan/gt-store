@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | GT Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico2.png">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">GT<span>STORE</span><small>ACHADINHOS TECH</small></a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav">
+      <a href="index.html">Início</a><a href="produtos.html">Produtos</a>
+      <a href="promocoes.html">Promoções</a><a href="sobre.html">Sobre</a><a class="active" href="contato.html">Contato</a>
+    </nav>
+    <a class="header-button" href="produtos.html">Explorar <span>↗</span></a>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-intro">
+      <span class="eyebrow">FALE COM A GT STORE</span>
+      <h1>Vamos conversar sobre <span>tecnologia?</span></h1>
+      <p>Envie uma mensagem ou utilize os canais de contato que você configurar para a sua loja.</p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-info">
+        <span class="eyebrow">ENTRE EM CONTATO</span>
+        <h2>Estamos por <span>aqui.</span></h2>
+        <p>Tem alguma dúvida, sugestão ou ideia de produto? Use o formulário ao lado.</p>
+
+        <div class="contact-item"><span>✉</span><div><strong>E-mail</strong><p>Configure aqui o e-mail oficial da loja.</p></div></div>
+        <div class="contact-item"><span>◎</span><div><strong>Instagram</strong><p>Adicione o perfil oficial da GT Store.</p></div></div>
+        <div class="contact-item"><span>◷</span><div><strong>Atendimento</strong><p>Consulte os canais e horários divulgados pela loja.</p></div></div>
+
+        <div class="contact-note"><strong>Compras e entregas</strong><p>Se você já comprou em um marketplace, entre em contato diretamente com o vendedor ou com o suporte da plataforma responsável pelo pedido.</p></div>
+      </div>
+
+      <form class="contact-form" id="contact-form" action="obrigado.html" method="get">
+        <span class="eyebrow">FORMULÁRIO</span>
+        <h2>Envie sua <span>mensagem</span></h2>
+
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Como podemos chamar você?" required>
+
+        <label for="email">Seu e-mail</label>
+        <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+
+        <label for="assunto">Assunto</label>
+        <select id="assunto" name="assunto" required>
+          <option value="">Selecione um assunto</option>
+          <option>Dúvida sobre produto</option>
+          <option>Sugestão de achadinho</option>
+          <option>Parceria</option>
+          <option>Outro assunto</option>
+        </select>
+
+        <label for="mensagem">Sua mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+        <button class="btn btn-primary btn-full" type="submit">Continuar ↗</button>
+        <small class="form-disclaimer">Demonstração de formulário. Os dados não serão enviados nem armazenados.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">GT<span>STORE</span><small>ACHADINHOS TECH</small></a>
+    <p>Seu espaço para descobrir achadinhos tecnológicos.</p>
+    <div class="footer-links"><a href="index.html">Início</a><a href="produtos.html">Produtos</a><a href="promocoes.html">Promoções</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></div>
+    <small>© <span class="year"></span> GT Store Achadinhos.</small>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

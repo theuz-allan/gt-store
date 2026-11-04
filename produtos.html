@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GT Store Achadinhos: descubra acessórios tecnológicos, periféricos e gadgets.">
+    <title>Produtos | GT Store Achadinhos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico2.png">
+</head>
+
+<body>
+
+    <!-- ================= CABEÇALHO ================= -->
+    <header class="header">
+
+        <a class="logo" href="index.html">
+            GT<span>STORE</span>
+            <small>ACHADINHOS TECH</small>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a class="active" href="produtos.html">Produtos</a>
+            <a href="promocoes.html">Promoções</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <a class="header-button" href="promocoes.html">
+            Ofertas <span>↗</span>
+        </a>
+
+    </header>
+
+    <main class="container page-main">
+
+        <!-- ================= BUSCA E FILTROS ================= -->
+        <section class="catalog-tools">
+
+            <label class="search-box">
+                <span>⌕</span>
+                <input
+                    id="product-search"
+                    type="search"
+                    placeholder="Buscar mouse, headset, carregador..."
+                    aria-label="Buscar produtos"
+                >
+            </label>
+
+            <div class="filter-list" aria-label="Filtrar por categoria">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="informatica">Informática</button>
+                <button class="filter-btn" data-filter="setup">Setup gamer</button>
+                <button class="filter-btn" data-filter="celular">Celular</button>
+                <button class="filter-btn" data-filter="audio">Áudio</button>
+                <button class="filter-btn" data-filter="perifericos">Periféricos</button>
+                <button class="filter-btn" data-filter="gadgets">Gadgets</button>
+                <button class="filter-btn" data-filter="outros">Outros</button>
+            </div>
+
+            <p class="results-count" id="results-count">
+                Exibindo produtos
+            </p>
+
+        </section>
+
+        <!-- ================= CATÁLOGO DE PRODUTOS ================= -->
+        <section class="product-grid catalog-grid" id="product-grid">
+          <!-- PRODUTO 2: TECLADO MECÂNICO -->
+            <article class="product-card"
+                data-category="informatica setup perifericos"
+                data-name="teclado mecanico 60 compacto">
+
+                <div class="product-media">
+                    <img src="assets/img/teclado.png" alt="Teclado mecânico 60%">
+                </div>
+
+                <div class="product-info">
+                    <h3>Teclado mecânico 60%</h3>
+                    <p class="product-desc">Design compacto para otimizar sua mesa.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 95,99</span>
+                        <strong class="price-now">R$ 64,86</strong>
+                        <span class="discount">-35% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/8AXO5cMWc1?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUTO 1: KIT GAMER -->
+            <article class="product-card"
+                data-category="perifericos setup"
+                data-name="kit gamer 2026 completo">
+
+                <div class="product-media">
+                    <img src="assets/img/img1.png" alt="Kit Gamer 2026 Completo">
+                </div>
+
+                <div class="product-info">
+                    <h3>Kit Gamer 2026 Completo</h3>
+                    <p class="product-desc">Liberdade de movimento para seu setup.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 258,99</span>
+                        <strong class="price-now">R$ 116,99</strong>
+                        <span class="discount">-45% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/6fiaIl98rS?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUTO 4: FONE BLUETOOTH -->
+            <article class="product-card"
+                data-category="audio celular gadgets"
+                data-name="fone bluetooth tws">
+
+                <div class="product-media">
+                    <img src="assets/img/fonetws.png" alt="Fone Bluetooth TWS">
+                </div>
+
+                <div class="product-info">
+                    <h3>Fone Bluetooth TWS</h3>
+                    <p class="product-desc">Praticidade para ouvir música em movimento.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 21,99</span>
+                        <strong class="price-now">R$ 19,99</strong>
+                        <span class="discount">-10% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/W7wxKLqGP?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+            
+            <!-- PRODUTO 3: HEADSET GAMER -->
+            <article class="product-card"
+                data-category="audio setup perifericos"
+                data-name="headset gamer">
+
+                <div class="product-media">
+                    <img src="assets/img/headset.png" alt="Headset gamer">
+                </div>
+
+                <div class="product-info">
+                    <h3>Headset gamer</h3>
+                    <p class="product-desc">Conforto e comunicação nas partidas.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 58,99</span>
+                        <strong class="price-now">R$ 49,99</strong>
+                        <span class="discount">-15% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/3VlYWkUJ3E?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- PRODUTO 5: CARREGADOR -->
+            <article class="product-card"
+                data-category="celular outros"
+                data-name="carregador turbo usb c">
+
+                <div class="product-media">
+                    <img src="assets/img/carregador.png" alt="Carregador turbo USB-C">
+                </div>
+
+                <div class="product-info">
+                    <h3>Carregador turbo USB-C</h3>
+                    <p class="product-desc">Carga rápida para sua rotina.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 32,00</span>
+                        <strong class="price-now">R$ 29,51</strong>
+                        <span class="discount">-17% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/5q9TIy1B7S?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUTO 6: SUPORTE ARTICULADO -->
+            <article class="product-card"
+                data-category="celular gadgets"
+                data-name="suporte articulado para celular">
+
+                <div class="product-media">
+                    <img src="assets/img/suporte.png" alt="Suporte articulado">
+                </div>
+
+                <div class="product-info">
+                    <h3>Suporte articulado Flexivel</h3>
+                    <p class="product-desc">Uma ajuda para chamadas, vídeos e estudos.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 21,15</span>
+                        <strong class="price-now">R$ 18,19</strong>
+                        <span class="discount">-14% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/3qOOvx9gws?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUTO 7: HUB USB-C -->
+            <article class="product-card"
+                data-category="informatica outros"
+                data-name="hub usb c multiportas">
+
+                <div class="product-media">
+                    <img src="assets/img/usbc.png" alt="Hub USB-C multiportas">
+                </div>
+
+                <div class="product-info">
+                    <h3>Hub USB-C multiportas</h3>
+                    <p class="product-desc">Pesquise opções para expandir as conexões.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 38,50</span>
+                        <strong class="price-now">R$ 24,20</strong>
+                        <span class="discount">-15% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/40hp6kyMh1?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUTO 8: FITA LED RGB -->
+            <article class="product-card"
+                data-category="setup gadgets"
+                data-name="fita led rgb para setup">
+
+                <div class="product-media">
+                    <img src="assets/img/led.png" alt="Fita LED RGB">
+                </div>
+
+                <div class="product-info">
+                    <h3>Fita LED RGB</h3>
+                    <p class="product-desc">Personalize seu ambiente com iluminação.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 24,49</span>
+                        <strong class="price-now">R$ 10,99</strong>
+                        <span class="discount">-13% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/9pfc3dgmS3?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUTO 9: SMARTWATCH -->
+            <article class="product-card"
+                data-category="gadgets celular"
+                data-name="smartwatch esportivo">
+
+                <div class="product-media">
+                    <img src="assets/img/relogio.png" alt="Smartwatch esportivo">
+                </div>
+
+                <div class="product-info">
+                    <h3>Smartwatch esportivo</h3>
+                    <p class="product-desc">Explore modelos e recursos para sua rotina.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 68,80</span>
+                        <strong class="price-now">R$ 39,80</strong>
+                        <span class="discount">-13% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/40hp7012J7?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUTO 10: MOUSEPAD GAMER -->
+            <article class="product-card"
+                data-category="informatica perifericos outros"
+                data-name="mousepad gamer desk mat">
+
+                <div class="product-media">
+                    <img src="assets/img/mousepad.png" alt="Mousepad gamer">
+                </div>
+
+                <div class="product-info">
+                    <h3>Mousepad gamer</h3>
+                    <p class="product-desc">Encontre modelos para completar seu setup.</p>
+
+                    <div class="price-box">
+                        <span class="price-old">R$ 39,99</span>
+                        <strong class="price-now">R$ 19,99</strong>
+                        <span class="discount">-12% OFF</span>
+                    </div>
+
+                    <a class="buy-btn"
+                        href="https://s.shopee.com.br/1gJuKqfogx?share_channel_code=1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver oferta ↗
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- ================= NENHUM RESULTADO ================= -->
+        <div id="no-results" class="empty-state" hidden>
+            <span>⌕</span>
+            <h2>Nenhum produto encontrado</h2>
+            <p>Tente outro nome ou selecione uma categoria diferente.</p>
+            <button class="btn btn-primary" id="clear-filters">
+                Limpar filtros
+            </button>
+        </div>
+
+        <!-- ================= AVISO ================= -->
+        <section class="notice">
+            <strong>Antes de comprar:</strong>
+            preços, disponibilidade, frete e características podem mudar.
+            Confira as informações diretamente na loja de destino.
+        </section>
+
+    </main>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="footer">
+
+        <a class="logo" href="index.html">
+            GT<span>STORE</span>
+            <small>ACHADINHOS TECH</small>
+        </a>
+
+        <p>Seu espaço para descobrir achadinhos tecnológicos.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="promocoes.html">Promoções</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <small>
+            © <span class="year"></span> GT Store Achadinhos.
+            Todos os direitos reservados.
+        </small>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+```
